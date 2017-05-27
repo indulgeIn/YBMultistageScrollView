@@ -1,0 +1,8 @@
+platform:ios, '8.0'
+target 'YBMultistageScrollView' do
+use_frameworks!
+
+pod 'SDWebImage', '~> 3.7.6'
+pod 'Masonry', '~> 1.0.2'
+
+end

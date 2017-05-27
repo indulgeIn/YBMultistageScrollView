@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EF4203563B099E8A7FCD9ED /* Pods_YBMultistageScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE56421FAEDAE6E02874ED9B /* Pods_YBMultistageScrollView.framework */; };
+		EE2BB0301ED95E140062F3BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2BB02F1ED95E140062F3BB /* main.m */; };
+		EE2BB0331ED95E140062F3BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2BB0321ED95E140062F3BB /* AppDelegate.m */; };
+		EE2BB0361ED95E140062F3BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2BB0351ED95E140062F3BB /* ViewController.m */; };
+		EE2BB0391ED95E140062F3BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2BB0371ED95E140062F3BB /* Main.storyboard */; };
+		EE2BB03B1ED95E140062F3BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE2BB03A1ED95E140062F3BB /* Assets.xcassets */; };
+		EE2BB03E1ED95E140062F3BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2BB03C1ED95E140062F3BB /* LaunchScreen.storyboard */; };
+		EE2BB04B1ED95ED00062F3BB /* GoodsDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2BB04A1ED95ED00062F3BB /* GoodsDetailsVC.m */; };
+		EE2BB0551ED95F260062F3BB /* EvaluateTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2BB0521ED95F260062F3BB /* EvaluateTableView.m */; };
+		EE2BB0581ED95F3D0062F3BB /* PicAndTextTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2BB0571ED95F3D0062F3BB /* PicAndTextTableView.m */; };
+		EE2BB05C1ED960100062F3BB /* YbWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2BB05B1ED960100062F3BB /* YbWebView.m */; };
+		EE2BB0661ED960B90062F3BB /* YBLevelListConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2BB05F1ED960B90062F3BB /* YBLevelListConfigModel.m */; };
+		EE2BB0671ED960B90062F3BB /* YBLevelListController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2BB0611ED960B90062F3BB /* YBLevelListController.m */; };
+		EE2BB0681ED960B90062F3BB /* YBLevelListSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2BB0631ED960B90062F3BB /* YBLevelListSubView.m */; };
+		EE2BB0691ED960B90062F3BB /* YBLevelListView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2BB0651ED960B90062F3BB /* YBLevelListView.m */; };
+		EE2BB0811ED964B10062F3BB /* UIView+YB.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2BB0801ED964B10062F3BB /* UIView+YB.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8DEA714A7381C0A0DD02A8B7 /* Pods-YBMultistageScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBMultistageScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YBMultistageScrollView/Pods-YBMultistageScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		C9CF06F052B17A97AB163FA0 /* Pods-YBMultistageScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YBMultistageScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-YBMultistageScrollView/Pods-YBMultistageScrollView.release.xcconfig"; sourceTree = "<group>"; };
+		EE2BB02B1ED95E140062F3BB /* YBMultistageScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBMultistageScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2BB02F1ED95E140062F3BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE2BB0311ED95E140062F3BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE2BB0321ED95E140062F3BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE2BB0341ED95E140062F3BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EE2BB0351ED95E140062F3BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EE2BB0381ED95E140062F3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE2BB03A1ED95E140062F3BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE2BB03D1ED95E140062F3BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE2BB03F1ED95E140062F3BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2BB0491ED95ED00062F3BB /* GoodsDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsDetailsVC.h; sourceTree = "<group>"; };
+		EE2BB04A1ED95ED00062F3BB /* GoodsDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsDetailsVC.m; sourceTree = "<group>"; };
+		EE2BB0511ED95F260062F3BB /* EvaluateTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvaluateTableView.h; sourceTree = "<group>"; };
+		EE2BB0521ED95F260062F3BB /* EvaluateTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvaluateTableView.m; sourceTree = "<group>"; };
+		EE2BB0561ED95F3D0062F3BB /* PicAndTextTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicAndTextTableView.h; sourceTree = "<group>"; };
+		EE2BB0571ED95F3D0062F3BB /* PicAndTextTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicAndTextTableView.m; sourceTree = "<group>"; };
+		EE2BB05A1ED960100062F3BB /* YbWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YbWebView.h; sourceTree = "<group>"; };
+		EE2BB05B1ED960100062F3BB /* YbWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YbWebView.m; sourceTree = "<group>"; };
+		EE2BB05E1ED960B90062F3BB /* YBLevelListConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBLevelListConfigModel.h; sourceTree = "<group>"; };
+		EE2BB05F1ED960B90062F3BB /* YBLevelListConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBLevelListConfigModel.m; sourceTree = "<group>"; };
+		EE2BB0601ED960B90062F3BB /* YBLevelListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBLevelListController.h; sourceTree = "<group>"; };
+		EE2BB0611ED960B90062F3BB /* YBLevelListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBLevelListController.m; sourceTree = "<group>"; };
+		EE2BB0621ED960B90062F3BB /* YBLevelListSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBLevelListSubView.h; sourceTree = "<group>"; };
+		EE2BB0631ED960B90062F3BB /* YBLevelListSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBLevelListSubView.m; sourceTree = "<group>"; };
+		EE2BB0641ED960B90062F3BB /* YBLevelListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBLevelListView.h; sourceTree = "<group>"; };
+		EE2BB0651ED960B90062F3BB /* YBLevelListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBLevelListView.m; sourceTree = "<group>"; };
+		EE2BB07C1ED962C20062F3BB /* MultstageScrollViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultstageScrollViewHeader.h; sourceTree = "<group>"; };
+		EE2BB07F1ED964B10062F3BB /* UIView+YB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YB.h"; sourceTree = "<group>"; };
+		EE2BB0801ED964B10062F3BB /* UIView+YB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YB.m"; sourceTree = "<group>"; };
+		FE56421FAEDAE6E02874ED9B /* Pods_YBMultistageScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YBMultistageScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE2BB0281ED95E140062F3BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF4203563B099E8A7FCD9ED /* Pods_YBMultistageScrollView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840C33BC1068E90B6EC02F90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DEA714A7381C0A0DD02A8B7 /* Pods-YBMultistageScrollView.debug.xcconfig */,
+				C9CF06F052B17A97AB163FA0 /* Pods-YBMultistageScrollView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9CCC817C8382846DD74CD7F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE56421FAEDAE6E02874ED9B /* Pods_YBMultistageScrollView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE2BB0221ED95E140062F3BB = {
+			isa = PBXGroup;
+			children = (
+				EE2BB02D1ED95E140062F3BB /* YBMultistageScrollView */,
+				EE2BB02C1ED95E140062F3BB /* Products */,
+				840C33BC1068E90B6EC02F90 /* Pods */,
+				9CCC817C8382846DD74CD7F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE2BB02C1ED95E140062F3BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BB02B1ED95E140062F3BB /* YBMultistageScrollView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE2BB02D1ED95E140062F3BB /* YBMultistageScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BB05D1ED960A20062F3BB /* OtherFramework */,
+				EE2BB0451ED95E600062F3BB /* Multstage */,
+				EE2BB0311ED95E140062F3BB /* AppDelegate.h */,
+				EE2BB0321ED95E140062F3BB /* AppDelegate.m */,
+				EE2BB0341ED95E140062F3BB /* ViewController.h */,
+				EE2BB0351ED95E140062F3BB /* ViewController.m */,
+				EE2BB0371ED95E140062F3BB /* Main.storyboard */,
+				EE2BB03A1ED95E140062F3BB /* Assets.xcassets */,
+				EE2BB03C1ED95E140062F3BB /* LaunchScreen.storyboard */,
+				EE2BB03F1ED95E140062F3BB /* Info.plist */,
+				EE2BB02E1ED95E140062F3BB /* Supporting Files */,
+			);
+			path = YBMultistageScrollView;
+			sourceTree = "<group>";
+		};
+		EE2BB02E1ED95E140062F3BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BB02F1ED95E140062F3BB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE2BB0451ED95E600062F3BB /* Multstage */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BB07C1ED962C20062F3BB /* MultstageScrollViewHeader.h */,
+				EE2BB0791ED961290062F3BB /* Main */,
+				EE2BB04D1ED95F170062F3BB /* Sub1 */,
+				EE2BB04C1ED95F110062F3BB /* Sub2 */,
+			);
+			name = Multstage;
+			sourceTree = "<group>";
+		};
+		EE2BB04C1ED95F110062F3BB /* Sub2 */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BB0511ED95F260062F3BB /* EvaluateTableView.h */,
+				EE2BB0521ED95F260062F3BB /* EvaluateTableView.m */,
+			);
+			name = Sub2;
+			sourceTree = "<group>";
+		};
+		EE2BB04D1ED95F170062F3BB /* Sub1 */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BB05A1ED960100062F3BB /* YbWebView.h */,
+				EE2BB05B1ED960100062F3BB /* YbWebView.m */,
+				EE2BB0561ED95F3D0062F3BB /* PicAndTextTableView.h */,
+				EE2BB0571ED95F3D0062F3BB /* PicAndTextTableView.m */,
+			);
+			name = Sub1;
+			sourceTree = "<group>";
+		};
+		EE2BB05D1ED960A20062F3BB /* OtherFramework */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BB07E1ED964960062F3BB /* Catogry */,
+				EE2BB07D1ED9648D0062F3BB /* YBLevelList */,
+			);
+			name = OtherFramework;
+			sourceTree = "<group>";
+		};
+		EE2BB0791ED961290062F3BB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BB0491ED95ED00062F3BB /* GoodsDetailsVC.h */,
+				EE2BB04A1ED95ED00062F3BB /* GoodsDetailsVC.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		EE2BB07D1ED9648D0062F3BB /* YBLevelList */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BB05E1ED960B90062F3BB /* YBLevelListConfigModel.h */,
+				EE2BB05F1ED960B90062F3BB /* YBLevelListConfigModel.m */,
+				EE2BB0601ED960B90062F3BB /* YBLevelListController.h */,
+				EE2BB0611ED960B90062F3BB /* YBLevelListController.m */,
+				EE2BB0621ED960B90062F3BB /* YBLevelListSubView.h */,
+				EE2BB0631ED960B90062F3BB /* YBLevelListSubView.m */,
+				EE2BB0641ED960B90062F3BB /* YBLevelListView.h */,
+				EE2BB0651ED960B90062F3BB /* YBLevelListView.m */,
+			);
+			name = YBLevelList;
+			sourceTree = "<group>";
+		};
+		EE2BB07E1ED964960062F3BB /* Catogry */ = {
+			isa = PBXGroup;
+			children = (
+				EE2BB07F1ED964B10062F3BB /* UIView+YB.h */,
+				EE2BB0801ED964B10062F3BB /* UIView+YB.m */,
+			);
+			name = Catogry;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE2BB02A1ED95E140062F3BB /* YBMultistageScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE2BB0421ED95E140062F3BB /* Build configuration list for PBXNativeTarget "YBMultistageScrollView" */;
+			buildPhases = (
+				08FF638974CE189B4BCD36E9 /* [CP] Check Pods Manifest.lock */,
+				EE2BB0271ED95E140062F3BB /* Sources */,
+				EE2BB0281ED95E140062F3BB /* Frameworks */,
+				EE2BB0291ED95E140062F3BB /* Resources */,
+				7E542C3E2EDF4A575D9DC786 /* [CP] Embed Pods Frameworks */,
+				3BFB484DBA2EC762BF291D3E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YBMultistageScrollView;
+			productName = YBMultistageScrollView;
+			productReference = EE2BB02B1ED95E140062F3BB /* YBMultistageScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE2BB0231ED95E140062F3BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = yangbo;
+				TargetAttributes = {
+					EE2BB02A1ED95E140062F3BB = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = UU8H9EQ986;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EE2BB0261ED95E140062F3BB /* Build configuration list for PBXProject "YBMultistageScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE2BB0221ED95E140062F3BB;
+			productRefGroup = EE2BB02C1ED95E140062F3BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE2BB02A1ED95E140062F3BB /* YBMultistageScrollView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE2BB0291ED95E140062F3BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2BB03E1ED95E140062F3BB /* LaunchScreen.storyboard in Resources */,
+				EE2BB03B1ED95E140062F3BB /* Assets.xcassets in Resources */,
+				EE2BB0391ED95E140062F3BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08FF638974CE189B4BCD36E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3BFB484DBA2EC762BF291D3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YBMultistageScrollView/Pods-YBMultistageScrollView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E542C3E2EDF4A575D9DC786 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YBMultistageScrollView/Pods-YBMultistageScrollView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE2BB0271ED95E140062F3BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2BB0661ED960B90062F3BB /* YBLevelListConfigModel.m in Sources */,
+				EE2BB0811ED964B10062F3BB /* UIView+YB.m in Sources */,
+				EE2BB0671ED960B90062F3BB /* YBLevelListController.m in Sources */,
+				EE2BB0681ED960B90062F3BB /* YBLevelListSubView.m in Sources */,
+				EE2BB0361ED95E140062F3BB /* ViewController.m in Sources */,
+				EE2BB0331ED95E140062F3BB /* AppDelegate.m in Sources */,
+				EE2BB05C1ED960100062F3BB /* YbWebView.m in Sources */,
+				EE2BB0581ED95F3D0062F3BB /* PicAndTextTableView.m in Sources */,
+				EE2BB04B1ED95ED00062F3BB /* GoodsDetailsVC.m in Sources */,
+				EE2BB0551ED95F260062F3BB /* EvaluateTableView.m in Sources */,
+				EE2BB0691ED960B90062F3BB /* YBLevelListView.m in Sources */,
+				EE2BB0301ED95E140062F3BB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE2BB0371ED95E140062F3BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE2BB0381ED95E140062F3BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE2BB03C1ED95E140062F3BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE2BB03D1ED95E140062F3BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE2BB0401ED95E140062F3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE2BB0411ED95E140062F3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE2BB0431ED95E140062F3BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DEA714A7381C0A0DD02A8B7 /* Pods-YBMultistageScrollView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UU8H9EQ986;
+				INFOPLIST_FILE = YBMultistageScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangbo.YBMultistageScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE2BB0441ED95E140062F3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9CF06F052B17A97AB163FA0 /* Pods-YBMultistageScrollView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UU8H9EQ986;
+				INFOPLIST_FILE = YBMultistageScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangbo.YBMultistageScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE2BB0261ED95E140062F3BB /* Build configuration list for PBXProject "YBMultistageScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE2BB0401ED95E140062F3BB /* Debug */,
+				EE2BB0411ED95E140062F3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE2BB0421ED95E140062F3BB /* Build configuration list for PBXNativeTarget "YBMultistageScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE2BB0431ED95E140062F3BB /* Debug */,
+				EE2BB0441ED95E140062F3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE2BB0231ED95E140062F3BB /* Project object */;
+}
