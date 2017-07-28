@@ -79,6 +79,7 @@
 #pragma mark *** YbWebViewDelegate ***
 - (void)ybWebView:(YbWebView *)ybWebView finishLoadWithHeight:(CGFloat)height {
     _heightOfCell = height;
+    
     [self reloadData];
 }
 
@@ -106,7 +107,8 @@
         _ybWebview = [YbWebView new];
         _ybWebview.delegate = self;
         _ybWebview.webView.scrollView.scrollEnabled = NO;
-        [_ybWebview loadWithUrlStr:@"http://www.jianshu.com/u/a89bf7b8bdd8"];
+//        @"http://www.jianshu.com/u/a89bf7b8bdd8"
+        [_ybWebview loadWithUrlStr:@"https://www.baidu.com"];
         
         [cell.contentView addSubview:_ybWebview];
         [_ybWebview mas_makeConstraints:^(MASConstraintMaker *make) {

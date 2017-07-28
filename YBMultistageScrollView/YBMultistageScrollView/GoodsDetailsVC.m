@@ -42,11 +42,27 @@
 
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    _isDrag = YES;
+    if ([scrollView isEqual:self.tableView]) {
+        _isDrag = YES;
+    }
+    else if ([scrollView isEqual:subScrollView]) {
+        self.evaluateTableView.scrollEnabled = NO;
+        self.picAndTextTableView.scrollEnabled = NO;
+    }
 }
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-    _isDrag = NO;
-   
+    if ([scrollView isEqual:self.tableView]) {
+        _isDrag = NO;
+    }
+    else if ([scrollView isEqual:subScrollView]) {
+        
+    }
+}
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    if ([scrollView isEqual:subScrollView]) {
+        self.evaluateTableView.scrollEnabled = YES;
+        self.picAndTextTableView.scrollEnabled = YES;
+    }
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
@@ -77,9 +93,7 @@
             scrollView.contentOffset = CGPointMake(scrollView.contentOffset.x, scrollView.contentSize.height-scrollView.H);
         }
         
-    }
-    
-    if ([scrollView isEqual:subScrollView]) {
+    } else if ([scrollView isEqual:subScrollView]) {
         
         [self.levelListView configAnimationOffsetX:subScrollView.contentOffset.x];
     }

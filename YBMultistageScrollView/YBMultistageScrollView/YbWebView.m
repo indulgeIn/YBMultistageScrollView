@@ -66,6 +66,7 @@
         
         if (_delegate && [_delegate respondsToSelector:@selector(ybWebView:finishLoadWithHeight:)]) {
             [_delegate ybWebView:self finishLoadWithHeight:self.webView.scrollView.contentSize.height];
+            NSLog(@"_heightOfCell : %lf", self.webView.scrollView.contentSize.height);
         }
     }
 }
