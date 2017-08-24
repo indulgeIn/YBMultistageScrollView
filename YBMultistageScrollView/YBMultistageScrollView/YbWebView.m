@@ -147,6 +147,7 @@
         _webView.delegate = self;
         _webView.scrollView.bounces = NO;
         _webView.backgroundColor = [UIColor whiteColor];
+        _webView.scrollView.scrollEnabled = NO;
     }
     return _webView;
 }

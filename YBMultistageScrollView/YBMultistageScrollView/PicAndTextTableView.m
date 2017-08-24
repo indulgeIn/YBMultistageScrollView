@@ -106,9 +106,8 @@
         
         _ybWebview = [YbWebView new];
         _ybWebview.delegate = self;
-        _ybWebview.webView.scrollView.scrollEnabled = NO;
 //        @"http://www.jianshu.com/u/a89bf7b8bdd8"
-        [_ybWebview loadWithUrlStr:@"https://www.baidu.com"];
+        [_ybWebview loadWithUrlStr:@"https://github.com/indulgeIn/YBMultistageScrollView"];
         
         [cell.contentView addSubview:_ybWebview];
         [_ybWebview mas_makeConstraints:^(MASConstraintMaker *make) {
