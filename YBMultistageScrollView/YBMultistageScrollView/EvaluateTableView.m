@@ -27,18 +27,6 @@
     return self;
 }
 
-#pragma mark *** tool ***
-- (UIViewController *)getViewControllerByView:(UIView *)view {
-    
-    for (id next = view; next; next = [next superview]) {
-        UIResponder *responder = [next nextResponder];
-        if ([responder isKindOfClass:[UIViewController class]]) {
-            return (UIViewController *)responder;
-        }
-    }
-    return nil;
-}
-
 #pragma mark *** UIScrollViewDelegate ***
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     _isDrag = YES;
@@ -50,8 +38,7 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
-
-    GoodsDetailsVC *vc = (GoodsDetailsVC *)[self getViewControllerByView:self];
+    OffsetType type = self.mainVC.offsetType;
     
     if (scrollView.contentOffset.y <= 0) {
         self.offsetType = OffsetTypeMin;
@@ -59,13 +46,13 @@
         self.offsetType = OffsetTypeCenter;
     }
     
-    if (vc.offsetType == OffsetTypeMin) {
+    if (type == OffsetTypeMin) {
         scrollView.contentOffset = CGPointZero;
     }
-    if (vc.offsetType == OffsetTypeCenter) {
+    if (type == OffsetTypeCenter) {
         scrollView.contentOffset = CGPointZero;
     }
-    if (vc.offsetType == OffsetTypeMax) {
+    if (type == OffsetTypeMax) {
         
     }
     

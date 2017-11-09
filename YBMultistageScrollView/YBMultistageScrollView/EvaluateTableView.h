@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "MultstageScrollViewHeader.h"
+#import "GoodsDetailsVC.h"
 
 @interface EvaluateTableView : UITableView
 
 @property (nonatomic, assign) OffsetType offsetType;
+
+@property (nonatomic, weak) GoodsDetailsVC *mainVC;
+
 
 @end

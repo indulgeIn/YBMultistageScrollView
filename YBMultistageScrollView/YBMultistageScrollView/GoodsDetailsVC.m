@@ -142,12 +142,12 @@
             
             _picAndTextTableView = [[PicAndTextTableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, kHeightOfGoodsDetailsBottomCell) style:UITableViewStylePlain];
             _picAndTextTableView.backgroundColor = [UIColor whiteColor];
-//            _picAndTextTableView.showsVerticalScrollIndicator = NO;
+            _picAndTextTableView.mainVC = self;
             [subScrollView addSubview:_picAndTextTableView];
             
             _evaluateTableView = [[EvaluateTableView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH, 0, SCREEN_WIDTH, kHeightOfGoodsDetailsBottomCell) style:UITableViewStylePlain];
             _evaluateTableView.backgroundColor = [UIColor whiteColor];
-//            _evaluateTableView.showsVerticalScrollIndicator = NO;
+            _evaluateTableView.mainVC = self;
             [subScrollView addSubview:_evaluateTableView];
 
             

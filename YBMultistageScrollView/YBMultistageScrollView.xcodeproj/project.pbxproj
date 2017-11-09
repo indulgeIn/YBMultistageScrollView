@@ -464,7 +464,7 @@
 				DEVELOPMENT_TEAM = UU8H9EQ986;
 				INFOPLIST_FILE = YBMultistageScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yangbo.YBMultistageScrollView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangbo.YBMultistageScrollView1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -477,7 +477,7 @@
 				DEVELOPMENT_TEAM = UU8H9EQ986;
 				INFOPLIST_FILE = YBMultistageScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yangbo.YBMultistageScrollView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangbo.YBMultistageScrollView1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -501,6 +501,7 @@
 				EE2BB0441ED95E140062F3BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

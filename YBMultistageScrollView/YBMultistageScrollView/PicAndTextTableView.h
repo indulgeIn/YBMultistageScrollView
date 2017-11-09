@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "MultstageScrollViewHeader.h"
+#import "GoodsDetailsVC.h"
 
 @interface PicAndTextTableView : UITableView
 
 @property (nonatomic, assign) OffsetType offsetType;
+
+@property (nonatomic, weak) GoodsDetailsVC *mainVC;
 
 @end
