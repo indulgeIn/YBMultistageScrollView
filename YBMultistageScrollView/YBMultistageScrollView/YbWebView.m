@@ -66,6 +66,7 @@
         
         if (_delegate && [_delegate respondsToSelector:@selector(ybWebView:finishLoadWithHeight:)]) {
             [_delegate ybWebView:self finishLoadWithHeight:self.webView.scrollView.contentSize.height];
+            NSLog(@"_heightOfCell : %lf", self.webView.scrollView.contentSize.height);
         }
     }
 }
@@ -146,6 +147,7 @@
         _webView.delegate = self;
         _webView.scrollView.bounces = NO;
         _webView.backgroundColor = [UIColor whiteColor];
+        _webView.scrollView.scrollEnabled = NO;
     }
     return _webView;
 }
