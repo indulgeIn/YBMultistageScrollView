@@ -11,9 +11,8 @@
 
 #import "GoodsDetailsVC.h"
 
-@interface PicAndTextTableView ()<UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate, YbWebViewDelegate>
+@interface PicAndTextTableView ()<UITableViewDelegate, UITableViewDataSource, YbWebViewDelegate>
 
-@property (nonatomic, assign) BOOL isDrag;
 @property (nonatomic, strong) YbWebView *ybWebview;
 
 @property (nonatomic, assign) CGFloat heightOfCell;
@@ -34,13 +33,6 @@
 }
 
 #pragma mark *** UIScrollViewDelegate ***
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    _isDrag = YES;
-}
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-    
-    _isDrag = NO;
-}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
@@ -57,9 +49,6 @@
     }
     if (type == OffsetTypeCenter) {
         scrollView.contentOffset = CGPointZero;
-    }
-    if (type == OffsetTypeMax) {
-        
     }
     
 }

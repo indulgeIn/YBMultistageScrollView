@@ -14,7 +14,7 @@
 #import "YBLevelListView.h"
 
 
-@interface GoodsDetailsVC () <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, YBLevelListViewDelegate>
+@interface GoodsDetailsVC () <UITableViewDelegate, UITableViewDataSource, YBLevelListViewDelegate>
 {
     UIScrollView *subScrollView;
 }

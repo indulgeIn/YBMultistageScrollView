@@ -9,9 +9,7 @@
 #import "EvaluateTableView.h"
 #import "GoodsDetailsVC.h"
 
-@interface EvaluateTableView () <UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
-
-@property (nonatomic, assign) BOOL isDrag;
+@interface EvaluateTableView () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
@@ -28,13 +26,6 @@
 }
 
 #pragma mark *** UIScrollViewDelegate ***
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    _isDrag = YES;
-}
-- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-    
-    _isDrag = NO;
-}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
@@ -51,9 +42,6 @@
     }
     if (type == OffsetTypeCenter) {
         scrollView.contentOffset = CGPointZero;
-    }
-    if (type == OffsetTypeMax) {
-        
     }
     
 }
