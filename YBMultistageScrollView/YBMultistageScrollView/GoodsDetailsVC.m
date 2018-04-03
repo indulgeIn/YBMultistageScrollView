@@ -24,8 +24,6 @@
 @property (nonatomic, strong) EvaluateTableView *evaluateTableView;
 @property (nonatomic, strong) PicAndTextTableView *picAndTextTableView;
 
-@property (nonatomic, assign) BOOL isDrag;
-
 @end
 
 @implementation GoodsDetailsVC
@@ -42,21 +40,12 @@
 
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    if ([scrollView isEqual:self.tableView]) {
-        _isDrag = YES;
-    }
-    else if ([scrollView isEqual:subScrollView]) {
+    if ([scrollView isEqual:subScrollView]) {
         self.evaluateTableView.scrollEnabled = NO;
         self.picAndTextTableView.scrollEnabled = NO;
     }
 }
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
-    if ([scrollView isEqual:self.tableView]) {
-        _isDrag = NO;
-    }
-    else if ([scrollView isEqual:subScrollView]) {
-        
-    }
 }
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     if ([scrollView isEqual:subScrollView]) {
@@ -78,17 +67,10 @@
             self.offsetType = OffsetTypeCenter;
         }
 
-        
-        if (self.levelListView.selectedIndex == 0 && _picAndTextTableView.offsetType == OffsetTypeMin) {
-            
-        }
         if (self.levelListView.selectedIndex == 0 && _picAndTextTableView.offsetType == OffsetTypeCenter) {
             scrollView.contentOffset = CGPointMake(scrollView.contentOffset.x, scrollView.contentSize.height-scrollView.H);
         }
-        
-        if (self.levelListView.selectedIndex == 1 && _evaluateTableView.offsetType == OffsetTypeMin) {
-            
-        }
+    
         if (self.levelListView.selectedIndex == 1 && _evaluateTableView.offsetType == OffsetTypeCenter) {
             scrollView.contentOffset = CGPointMake(scrollView.contentOffset.x, scrollView.contentSize.height-scrollView.H);
         }
