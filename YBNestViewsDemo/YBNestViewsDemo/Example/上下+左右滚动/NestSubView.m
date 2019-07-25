@@ -3,7 +3,7 @@
 //  YBNestViewsDemo
 //
 //  Created by 波儿菜 on 2019/7/24.
-//  Copyright © 2019 杨波. All rights reserved.
+//  Copyright © 2019 波儿菜. All rights reserved.
 //
 
 #import "NestSubView.h"
@@ -29,10 +29,22 @@
     self.tableView.frame = self.bounds;
 }
 
+#pragma mark - <YBNestContentProtocol>
+
+@synthesize yb_scrollViewDidScroll = _yb_scrollViewDidScroll;
+
+- (UIView *)yb_contentView {
+    return self;
+}
+
+- (UIScrollView *)yb_contentScrollView {
+    return self.tableView;
+}
+
 #pragma mark - <UITableViewDataSource, UITableViewDelegate>
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    return 27;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -55,6 +67,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    self.yb_scrollViewDidScroll(scrollView);
 }
 
 #pragma mark - getter

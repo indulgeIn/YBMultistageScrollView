@@ -3,14 +3,14 @@
 //  YBNestViewsDemo
 //
 //  Created by 波儿菜 on 2019/7/24.
-//  Copyright © 2019 杨波. All rights reserved.
+//  Copyright © 2019 波儿菜. All rights reserved.
 //
 
 #import "NestMainController.h"
-#import "YBNestTableView.h"
-#import "YBNestContainerView.h"
+#import "YBNestViews.h"
 #import "NestSubView.h"
 #import "NestSubController.h"
+#import "NestSubSpaceView.h"
 
 @interface NestMainController () <UITableViewDelegate, UITableViewDataSource, YBNestContainerViewDataSource>
 @property (nonatomic, strong) YBNestTableView *tableView;
@@ -42,25 +42,17 @@
 
 #pragma mark - <YBNestContainerViewDataSource>
 
-- (NSInteger)yb_numberOfViewsInNestContainerView:(YBNestContainerView *)view {
-    return 3;
+- (NSInteger)yb_numberOfContentsInNestContainerView:(YBNestContainerView *)view {
+    return 4;
 }
 
-- (UIView *)yb_nestContainerView:(YBNestContainerView *)view viewAtPage:(NSInteger)page {
-    NSLog(@"获取视图 page：%ld", page);
+- (id<YBNestContentProtocol>)yb_nestContainerView:(YBNestContainerView *)view contentAtPage:(NSInteger)page{
     switch (page) {
-        case 0:
-            return [NestSubView new];
-            break;
-        case 1:
-            return [NestSubView new];
-            break;
-        case 2:
-            vc = NestSubController.new;
-            return vc.view;
-        default:
-            return nil;
-            break;
+        case 0: return [NestSubView new];
+        case 1: return [NestSubView new];
+        case 2: return [NestSubSpaceView new];
+        case 3: return [NestSubController new];
+        default: return nil;
     }
 }
 
@@ -105,6 +97,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self.containerView mainScrollViewDidScroll:scrollView];
 }
 
 #pragma mark - getter

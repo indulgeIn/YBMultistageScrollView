@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2338592122E98E47008725C3 /* UIScrollView+YBNestViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 2338592022E98E47008725C3 /* UIScrollView+YBNestViews.m */; };
+		2338592422E99D11008725C3 /* NestSubSpaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2338592322E99D11008725C3 /* NestSubSpaceView.m */; };
+		2338592722E9A2E2008725C3 /* YBNestCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2338592622E9A2E2008725C3 /* YBNestCollectionView.m */; };
 		237C844F21E6E55F0058652A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 237C844E21E6E55F0058652A /* AppDelegate.m */; };
 		237C845521E6E55F0058652A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237C845321E6E55F0058652A /* Main.storyboard */; };
 		237C845721E6E5600058652A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237C845621E6E5600058652A /* Assets.xcassets */; };
@@ -22,6 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2338591D22E93820008725C3 /* YBNestContentProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBNestContentProtocol.h; sourceTree = "<group>"; };
+		2338591E22E979FD008725C3 /* YBNestViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBNestViews.h; sourceTree = "<group>"; };
+		2338591F22E98E47008725C3 /* UIScrollView+YBNestViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YBNestViews.h"; sourceTree = "<group>"; };
+		2338592022E98E47008725C3 /* UIScrollView+YBNestViews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+YBNestViews.m"; sourceTree = "<group>"; };
+		2338592222E99D11008725C3 /* NestSubSpaceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NestSubSpaceView.h; sourceTree = "<group>"; };
+		2338592322E99D11008725C3 /* NestSubSpaceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NestSubSpaceView.m; sourceTree = "<group>"; };
+		2338592522E9A2E2008725C3 /* YBNestCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBNestCollectionView.h; sourceTree = "<group>"; };
+		2338592622E9A2E2008725C3 /* YBNestCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBNestCollectionView.m; sourceTree = "<group>"; };
 		237C844A21E6E55F0058652A /* YBNestViewsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBNestViewsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		237C844D21E6E55F0058652A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		237C844E21E6E55F0058652A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -94,12 +105,18 @@
 		237C846321E6E5880058652A /* YBNestViews */ = {
 			isa = PBXGroup;
 			children = (
+				2338591E22E979FD008725C3 /* YBNestViews.h */,
+				2338591D22E93820008725C3 /* YBNestContentProtocol.h */,
 				23B1916122E82A20003956CF /* YBNestContainerView.h */,
 				23B1916222E82A20003956CF /* YBNestContainerView.m */,
+				2338592522E9A2E2008725C3 /* YBNestCollectionView.h */,
+				2338592622E9A2E2008725C3 /* YBNestCollectionView.m */,
 				23B1916422E82B05003956CF /* YBNestContainerLayout.h */,
 				23B1916522E82B05003956CF /* YBNestContainerLayout.m */,
 				23B1918622E84F72003956CF /* YBNestTableView.h */,
 				23B1918722E84F72003956CF /* YBNestTableView.m */,
+				2338591F22E98E47008725C3 /* UIScrollView+YBNestViews.h */,
+				2338592022E98E47008725C3 /* UIScrollView+YBNestViews.m */,
 			);
 			path = YBNestViews;
 			sourceTree = SOURCE_ROOT;
@@ -121,6 +138,8 @@
 				23B1917822E8442D003956CF /* NestSubView.m */,
 				23B1917A22E84551003956CF /* NestSubController.h */,
 				23B1917B22E84551003956CF /* NestSubController.m */,
+				2338592222E99D11008725C3 /* NestSubSpaceView.h */,
+				2338592322E99D11008725C3 /* NestSubSpaceView.m */,
 			);
 			path = "上下+左右滚动";
 			sourceTree = "<group>";
@@ -196,6 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				23B1917622E84336003956CF /* NestMainController.m in Sources */,
+				2338592722E9A2E2008725C3 /* YBNestCollectionView.m in Sources */,
+				2338592122E98E47008725C3 /* UIScrollView+YBNestViews.m in Sources */,
+				2338592422E99D11008725C3 /* NestSubSpaceView.m in Sources */,
 				23B1917322E830D3003956CF /* ViewController.mm in Sources */,
 				23B1917922E8442D003956CF /* NestSubView.m in Sources */,
 				23B1916622E82B05003956CF /* YBNestContainerLayout.m in Sources */,
