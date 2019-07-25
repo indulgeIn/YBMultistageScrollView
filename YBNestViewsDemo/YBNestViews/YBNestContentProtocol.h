@@ -33,6 +33,16 @@ NS_ASSUME_NONNULL_BEGIN
 /// 若有滚动视图必须实现该属性，并且在 `- (void)scrollViewDidScroll:(UIScrollView *)scrollView` 代理方法中调用该属性
 @property (nonatomic, copy) void(^yb_scrollViewDidScroll)(UIScrollView *scrollView);
 
+/**
+ 视图即将显示
+ */
+- (void)yb_contentWillAppear;
+
+/**
+ 视图已经消失
+ */
+- (void)yb_contentDidDisappear;
+
 @end
 
 NS_ASSUME_NONNULL_END

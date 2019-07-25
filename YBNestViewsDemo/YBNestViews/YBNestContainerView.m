@@ -146,6 +146,20 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    for (id<YBNestContentProtocol> content in _contentsCache.allValues) {
+        if (![content respondsToSelector:@selector(yb_contentWillAppear)]) continue;
+        [content yb_contentWillAppear];
+    }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    for (id<YBNestContentProtocol> content in _contentsCache.allValues) {
+        if (![content respondsToSelector:@selector(yb_contentDidDisappear)]) continue;
+        [content yb_contentDidDisappear];
+    }
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [self containerScrollViewDidScroll:scrollView];
     

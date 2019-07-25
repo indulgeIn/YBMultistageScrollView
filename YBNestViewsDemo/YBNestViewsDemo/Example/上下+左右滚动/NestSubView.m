@@ -41,6 +41,14 @@
     return self.tableView;
 }
 
+- (void)yb_contentWillAppear {
+    NSLog(@"yb_contentWillAppear");
+}
+
+- (void)yb_contentDidDisappear {
+    NSLog(@"yb_contentDidDisappear");
+}
+
 #pragma mark - <UITableViewDataSource, UITableViewDelegate>
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
