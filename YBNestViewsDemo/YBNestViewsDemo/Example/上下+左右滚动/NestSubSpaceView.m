@@ -24,4 +24,13 @@
     return self;
 }
 
+- (void)yb_contentWillAppear {
+    YBLog(@"%@ %@", self, NSStringFromSelector(_cmd));
+}
+
+- (void)yb_contentDidDisappear {
+    YBLog(@"%@ %@", self, NSStringFromSelector(_cmd));
+}
+
+
 @end

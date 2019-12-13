@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  YBNestViewsDemo
+//
+//  Created by 波儿菜 on 2019/12/13.
+//  Copyright © 2019 杨波. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#if DEBUG
+#define YBLog(FORMAT, ...) fprintf(stderr,"%s\n",[[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define YBLog(FORMAT, ...) nil;
+#endif
+
+
+#endif /* PrefixHeader_pch */

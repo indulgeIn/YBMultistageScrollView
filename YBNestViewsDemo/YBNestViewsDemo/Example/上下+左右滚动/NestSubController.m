@@ -18,23 +18,23 @@
 #pragma mark - life cycle
 
 - (void)dealloc {
-    NSLog(@"%@ 释放", self);
+    YBLog(@"%@ 释放", self);
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@ %@", self, NSStringFromSelector(_cmd));
+    YBLog(@"%@ %@", self, NSStringFromSelector(_cmd));
     [self.view addSubview:self.tableView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    NSLog(@"%@ %@", self, NSStringFromSelector(_cmd));
+    YBLog(@"%@ %@", self, NSStringFromSelector(_cmd));
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    NSLog(@"%@ %@", self, NSStringFromSelector(_cmd));
+    YBLog(@"%@ %@", self, NSStringFromSelector(_cmd));
 }
 
 - (void)viewWillLayoutSubviews {
@@ -52,6 +52,14 @@
 
 - (UIScrollView *)yb_contentScrollView {
     return self.tableView;
+}
+
+- (void)yb_contentWillAppear {
+    YBLog(@"%@ %@", self, NSStringFromSelector(_cmd));
+}
+
+- (void)yb_contentDidDisappear {
+    YBLog(@"%@ %@", self, NSStringFromSelector(_cmd));
 }
 
 #pragma mark - <UITableViewDataSource, UITableViewDelegate>

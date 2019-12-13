@@ -102,7 +102,6 @@ static NSString * const kCellIdentifier = @"kCellIdentifier";
     scrollView.showsVerticalScrollIndicator = !_mainScrollViewArriveBottom;
     
     if (beforeBottom != _mainScrollViewArriveBottom && !_mainScrollViewArriveBottom) {
-        NSLog(@"reset");
         // Reset 'contentOffset' of all the 'contentScrollView'.
         for (id<YBNestContentProtocol> content in _contentsCache.allValues) {
             if (![content respondsToSelector:@selector(yb_contentScrollView)]) continue;

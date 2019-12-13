@@ -42,11 +42,11 @@
 }
 
 - (void)yb_contentWillAppear {
-    NSLog(@"yb_contentWillAppear");
+    YBLog(@"%@ %@", self, NSStringFromSelector(_cmd));
 }
 
 - (void)yb_contentDidDisappear {
-    NSLog(@"yb_contentDidDisappear");
+    YBLog(@"%@ %@", self, NSStringFromSelector(_cmd));
 }
 
 #pragma mark - <UITableViewDataSource, UITableViewDelegate>

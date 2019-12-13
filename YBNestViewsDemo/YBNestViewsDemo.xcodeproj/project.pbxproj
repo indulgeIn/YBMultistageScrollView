@@ -33,6 +33,7 @@
 		2338592322E99D11008725C3 /* NestSubSpaceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NestSubSpaceView.m; sourceTree = "<group>"; };
 		2338592522E9A2E2008725C3 /* YBNestCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBNestCollectionView.h; sourceTree = "<group>"; };
 		2338592622E9A2E2008725C3 /* YBNestCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YBNestCollectionView.m; sourceTree = "<group>"; };
+		2370FD7A23A36C43006D6813 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		237C844A21E6E55F0058652A /* YBNestViewsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBNestViewsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		237C844D21E6E55F0058652A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		237C844E21E6E55F0058652A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 				23B1917222E830D3003956CF /* ViewController.mm */,
 				237C844D21E6E55F0058652A /* AppDelegate.h */,
 				237C844E21E6E55F0058652A /* AppDelegate.m */,
+				2370FD7A23A36C43006D6813 /* PrefixHeader.pch */,
 				237C845321E6E55F0058652A /* Main.storyboard */,
 				237C845621E6E5600058652A /* Assets.xcassets */,
 				237C845821E6E5600058652A /* LaunchScreen.storyboard */,
@@ -369,13 +371,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UU8H9EQ986;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YBNestViewsDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = YBNestViewsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yangbo.YBNestViewsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = yangbo.YBNestViewsDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -387,13 +390,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UU8H9EQ986;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YBNestViewsDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = YBNestViewsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yangbo.YBNestViewsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = yangbo.YBNestViewsDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

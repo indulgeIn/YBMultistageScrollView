@@ -17,9 +17,7 @@
 @property (nonatomic, strong) YBNestContainerView *containerView;
 @end
 
-@implementation NestMainController {
-    NestSubController *vc;
-}
+@implementation NestMainController
 
 #pragma mark - life cycle
 
@@ -37,7 +35,7 @@
 /// 容器视图的高度
 + (CGSize)containerSize {
     CGSize screenSize = UIScreen.mainScreen.bounds.size;
-    return CGSizeMake(screenSize.width, screenSize.height - UIApplication.sharedApplication.statusBarFrame.size.height - 44);
+    return CGSizeMake(screenSize.width, screenSize.height - UIApplication.sharedApplication.statusBarFrame.size.height - 44 - 100);
 }
 
 #pragma mark - <YBNestContainerViewDataSource>
